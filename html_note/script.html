@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script标签</title>
+    <link rel="stylesheet" href="../styles/styles-1.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>&lt;script&gt;</h1>
+        </header>
+        <p>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/script">&lt;script&gt;</a>
+            元素规定了当前文档与某个外部资源的关系
+            <br>
+            &lt;script&gt; 标签通常放在 &lt;head&gt; 或 &lt;body&gt; 部分。建议将脚本放在 &lt;body&gt; 的末尾，以提高页面加载性能。
+        </p>
+
+        <h2>属性</h2>
+        <p>该元素包含<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Global_attributes">全局属性</a></p>
+        <p><b>常用</b></p>
+        <hr>
+        <p>内联JavaScript</p>
+        <div class="code_box">
+            <pre><code>&lt;script&gt;console.log('Hello, World!');&lt;/script&gt;</code></pre>
+        </div>
+        <p>外部JavaScript文件</p>
+        <div class="code_box">
+            <pre>默认情况下,脚本会阻塞HTML解析<br><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+            <pre>脚本异步加载,不阻塞HTML解析<br><code>&lt;script src="script.js" async&gt;&lt;/script&gt;</code></pre>
+            <pre>脚本延迟加载,在文档解析完成后执行<br><code>&lt;script src="script.js" defer&gt;&lt;/script&gt;</code></pre>
+        </div>
+        <br>
+        <p><b>了解</b></p>
+        <hr>
+        <p>使用CDN资源并添加SRI验证</p>
+        <div class="code_box">
+
+            <pre><code>&lt;script src="https://cdn.example.com/script.js" integrity="sha384-..." crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+        </div>
+        <p>模块脚本ES6</p>
+        <div class="code_box">
+            <pre><code>&lt;script&gt; <br>type="module" import { function1, function2 } from './module.js';"<br>&lt;/script&gt;</code></pre>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;a&gt;标签</title>
+    <link rel="stylesheet" href="../styles/styles-1.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>&lt;a&gt;</h1>
+        </header>
+        <p>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/a">&lt;a&gt;</a>
+            元素或称（锚元素）可以通过它的 href 属性创建通向其他网页、文件、电子邮件地址、同一页面内的位置或任何其他 URL 的超链接。
+        </p>
+
+        <h2>属性</h2>
+        <p>该元素包含<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Global_attributes">全局属性</a></p>
+
+        <hr>
+
+        <h2>常用属性示例</h2>
+
+        <p>打开方式</p>
+        <div class="code_box">
+            <pre>在新窗口/标签页打开<br><code>&lt;a href="链接地址" target="_blank"&gt;链接文本&lt;/a&gt;</code></pre>
+            <pre>在当前窗口/标签页打开<br><code>&lt;a href="链接地址" target="_self"&gt;链接文本&lt;/a&gt;</code></pre>
+            <pre>在父框架集中打开<br><code>&lt;a href="链接地址" target="_parent"&gt;链接文本&lt;/a&gt;</code></pre>
+        </div>
+
+        <p>下载链接</p>
+        <div class="code_box">
+            <pre><code>&lt;a href="文件地址" download&gt;下载链接文本&lt;/a&gt;</code></pre>
+        </div>
+
+        <p>带工具提示的链接</p>
+        <div class="code_box">
+            <pre><code>&lt;a href="https://www.example.com" title="点击访问示例网站"&gt;示例网站&lt;/a&gt;</code></pre>
+        </div>
+        <p>带样式的链接</p>
+        <div class="code_box">
+            <pre><code>&lt;a href="链接地址" style="color: red; text-decoration: none;"&gt;链接文本&lt;/a&gt;</code></pre>
+        </div>
+
+        <p>图片链接</p>
+        <div class="code_box">
+            <pre><code>&lt;a href="链接地址"&gt;&lt;img src="图片地址" alt="描述文本"&gt;&lt;/a&gt;</code></pre>
+        </div>
+
+        <p>链接JavaScript函数</p>
+        <div class="code_box">
+            <pre><code>&lt;a href="javascript:alert('Hello World!');"&gt;点击我&lt;/a&gt;</code></pre>
+        </div>
+
+
+        <p>电子邮件链接</p>
+        <div class="code_box">
+            <pre><code>&lt;a href="mailto:example@example.com"&gt;发送电子邮件&lt;/a&gt;</code></pre>
+        </div>
+
+        <p>电话链接</p>
+        <div class="code_box">
+            <pre><code>&lt;a href="tel:+1234567890"&gt;拨打电话&lt;/a&gt;</code></pre>
+        </div>
+
+        <p>锚点链接示例：</p>
+        <div class="code_box">
+            <pre>定义锚点<br>&lt;h2 id="section2"&gt;第二部分&lt;/h2&gt;</pre>
+            <pre>链接到锚点<br>&lt;a href="#section2"&gt;跳转到第二部分&lt;/a&gt;</pre>
+            <pre>从其他页面链接到锚点<br>&lt;a href="page.html#section2"&gt;跳转到另一页的第二部分&lt;/a&gt;</pre>
+        </div>
+
+    </main>
+</body>
+
+</html>

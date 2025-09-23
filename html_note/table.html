@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;table&gt;标签</title>
+    <link rel="stylesheet" href="../styles/styles-1.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>&lt;table&gt;</h1>
+        </header>
+        <p>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/table">&lt;table&gt;</a>
+            元素表示表格数据——即在一个由包含数据的行和列组成的二维表格中呈现的信息。
+        </p>
+        <dl>
+            <dt>常用标签</dt>
+            <dd>&lt;table&gt;: 表格的容器元素</dd>
+            <dd>&lt;tr&gt;: 表格行</dd>
+            <dd>&lt;th&gt;: 表头单元格</dd>
+            <dd>&lt;td&gt;: 表格单元格</dd>
+            <dd>&lt;caption&gt;: 表格标题</dd>
+            <dd>&lt;thead&gt;: 表格头部</dd>
+            <dd>&lt;tbody&gt;: 表格主体</dd>
+            <dd>&lt;tfoot&gt;: 表格底部</dd>
+        </dl>
+
+        <h2>属性</h2>
+        <p>该元素包含<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Global_attributes">全局属性</a></p>
+
+        <hr>
+
+        <h2>常用属性示例</h2>
+        <p>表格框架</p>
+        <div class="code_box">
+            <pre><code>&lt;table&gt;
+
+    &lt;!-- 表格标题 --&gt;
+    &lt;caption&gt;月销售数据统计表&lt;/caption&gt;
+
+    &lt;!-- 表格头部 --&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;产品名称&lt;/th&gt;
+            &lt;th&gt;一月&lt;/th&gt;
+            &lt;th&gt;二月&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;!-- 表格主体 --&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;产品A&lt;/td&gt;
+            &lt;td&gt;120&lt;/td&gt;
+            &lt;td&gt;150&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;!-- 表格底部 --&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;总计&lt;/td&gt;
+            &lt;td&gt;210&lt;/td&gt;
+            &lt;td&gt;260&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+    &lt;/table&gt;</code></pre>
+        </div>
+        <br>
+        <div class="code_box">
+            <pre><code>&lt;td colspan="2" rowspan="2"&gt;合并单元格&lt;/td&gt;
+</code></pre>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

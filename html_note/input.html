@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;input&gt;标签</title>
+    <link rel="stylesheet" href="../styles/styles-1.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>&lt;input&gt;</h1>
+        </header>
+        <p>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/input">&lt;input&gt;</a>
+            元素用于为基于 Web 的表单创建交互式控件，以便接受来自用户的数据。
+        </p>
+
+        <h2>属性</h2>
+        <p>该元素包含<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Global_attributes">全局属性</a></p>
+
+        <hr>
+
+        <h2>常用属性示例</h2>
+
+        <p>文本输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="text" name="username" id="username" placeholder="请输入用户名"&gt;&lt;/input&gt;</code></pre>
+        </div>
+
+        <p>密码输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="password" name="password" id="password" required &gt;&lt;/input&gt;</code></pre>
+        </div>
+
+        <p>提交按钮</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="submit" value="提交"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>单选按钮</p>
+        <div class="code_box">
+            <pre><code>&lt;label for="male"&gt;男&lt;/label&gt;</code></pre>
+            <pre><code>&lt;input type="radio" id="male" name="gender" value="male" required&gt;&lt;/input&gt;</code></pre>
+        </div>
+
+        <p>复选框</p>
+        <div class="code_box">
+            <pre><code>&lt;label for="subscribe"&gt;订阅新闻邮件&lt;/label&gt;</code></pre>
+            <pre><code>&lt;input type="checkbox" id="subscribe" name="subscribe" value="yes"&gt;&lt;/input&gt;</code></pre>
+        </div>
+
+        <p>文件上传</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="file" name="fileUpload" id="fileUpload"&gt;&lt;/input&gt;</code></pre>
+        </div>
+
+        <p>邮箱输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="email" name="email" id="email" required&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>数字输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="number" name="quantity" id="quantity" min="1" max="10"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>日期输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="date" name="birthday" id="birthday"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>颜色选择器</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="color" name="favcolor" id="favcolor" value="#ff0000"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>范围选择器</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="range" name="volume" id="volume" min="0" max="100"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>隐藏域</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="hidden" name="userid" value="12345"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>搜索输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="search" name="site-search" id="site-search" placeholder="搜索整个站点" aria-label="搜索整个站点"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>电话输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="tel" name="usrtel" id="usrtel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>时间输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="time" name="usrtime" id="usrtime" required&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>网址输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="url" name="usrurl" id="usrurl" required&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>图像提交按钮</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="image" name="submit" src="submit.png" alt="Submit"&gt;&lt;/input&gt;</code></pre>
+        </div>
+        <p>带预定义选项的输入框</p>
+        <div class="code_box">
+            <pre><code>&lt;input type="text" id="country" name="country" list="countries"&gt;&lt;/input&gt;</code></pre>
+            <pre><code>&lt;datalist id="countries"&gt;</code></pre>
+            <pre><code>&lt;option value="中国"&gt;</code></pre>
+            <pre><code>&lt;/datalist&gt;</code></pre>
+        </div>
+
+    </main>
+</body>
+
+</html>

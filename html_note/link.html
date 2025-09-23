@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link标签</title>
+    <link rel="stylesheet" href="../styles/styles-1.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>&lt;link&gt;</h1>
+        </header>
+        <p>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/link">&lt;link&gt;</a>
+            元素规定了当前文档与某个外部资源的关系
+        </p>
+
+        <h2>属性</h2>
+        <p>该元素包含<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Global_attributes">全局属性</a></p>
+        <p><b>常用</b></p>
+        <hr>
+        <p>链接外部CSS样式表</p>
+        <div class="code_box">
+            <pre>基本样式表<br><code>&lt;link rel="stylesheet" href="styles-1.css" /&gt;</code></pre>
+            <pre>media属性指定设备<br><code>&lt;link rel="stylesheet" href="print.css" media="print" /&gt;</code></pre>
+            <pre>使用CDN资源并添加SRI验证<br><code>&lt;link rel="stylesheet" href="https://cdn.example.com/styles.css" integrity="sha384-..." crossorigin="anonymous" /&gt;</code></pre>
+        </div>
+        <p>链接网站图标</p>
+        <div class="code_box">
+            <pre>传统ICO格式<br><code>&lt;link rel="icon" href="favicon.ico" sizes="any"" /&gt;</code></pre>
+            <pre>SVG格式（可缩放）<br><code>&lt;link rel="icon" href="favicon.svg" type="image/svg+xml" /&gt;</code></pre>
+            <pre>苹果设备图标<br><code>&lt;rel="apple-touch-icon" href="apple-touch-icon.png" /&gt;</code></pre>
+            <pre>多种尺寸的图标<br><code>&lt;link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" /&gt;</code></pre>
+        </div>
+
+        <p>预加载资源</p>
+        <div class="code_box">
+            <pre>预加载字体<br /><code>&lt;link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin="anonymous" /&gt;</code></pre>
+            <pre>预加载CSS<br /><code>&lt;link rel="preload" href="styles.css" as="style" /&gt;</code></pre>
+            <pre>预加载JavaScript<br /><code>&lt;link rel="preload" href="script.js" as="script" /&gt;</code></pre>
+            <pre>预加载图像<br /><code>&lt;link rel="preload" href="hero-image.jpg" as="image" /&gt;</code></pre>
+        </div>
+        <br>
+        <p><b>了解</b></p>
+        <hr>
+        <p>DNS 解析</p>
+        <div class="code_box">
+            <pre><br /><code>&lt;link rel="dns-prefetch" href="https://cdn.example.com" /&gt;</code></pre>
+        </div>
+
+        <p>预连接</p>
+        <div class="code_box">
+            <pre><br /><code>&lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;</code></pre>
+        </div>
+        <p>RSS订阅</p>
+        <div class="code_box">
+            <pre><br /><code>&lt;link rel="alternate" type="application/rss+xml" href="rss.xml" title="RSS订阅" /&gt;</code></pre>
+        </div>
+    </main>
+</body>
+
+</html>

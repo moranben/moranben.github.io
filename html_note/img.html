@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;img&gt;标签</title>
+    <link rel="stylesheet" href="../styles/styles-1.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>&lt;img&gt;</h1>
+        </header>
+        <p>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/img">&lt;img&gt;</a>
+            元素用于在网页中嵌入图像。
+        </p>
+
+        <h2>属性</h2>
+        <p>该元素包含<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Global_attributes">全局属性</a></p>
+
+        <hr>
+
+        <div class="code_box">
+            <pre><code>&lt;img src="image.jpg" alt="描述文本"&gt;</code></pre>
+        </div>
+
+        <h2>常用属性</h2>
+        <p>带尺寸的图像</p>
+        <div class="code_box">
+            <pre><code>&lt;img src="image.jpg" alt="描述文本" width="500" height="300"&gt;</code></pre>
+        </div>
+
+        <p>延迟加载的图像</p>
+        <div class="code_box">
+            <pre><code>&lt;img src="image.jpg" alt="描述文本" loading="lazy"&gt;</code></pre>
+        </div>
+
+        <p>带样式的图像</p>
+        <div class="code_box">
+            <pre><code>&lt;img src="image.jpg" alt="描述文本" style="border: 1px solid #ccc; border-radius: 5px;"&gt;</code></pre>
+        </div>
+        <p>响应式图像</p>
+        <div class="code_box">
+            <pre><code>&lt;img src="image-small.jpg" srcset="image-small.jpg 500w,
+                                image-medium.jpg 1000w,
+                                image-large.jpg 1500w" sizes="(max-width: 600px) 500px,
+                                (max-width: 1200px) 1000px, 1500px" alt="描述性文本"&gt;</code></pre>
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>

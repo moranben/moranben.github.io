@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;textarea&gt;标签</title>
+    <link rel="stylesheet" href="../styles/styles-1.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>&lt;textarea&gt;</h1>
+        </header>
+        <p>
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/textarea">&lt;textarea&gt;</a>
+            元素用于创建多行文本输入控件。
+        </p>
+
+        <h2>属性</h2>
+        <p>该元素包含<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Global_attributes">全局属性</a></p>
+
+        <hr>
+
+        <h2>常用属性示例</h2>
+
+        <p>文本区域</p>
+        <div class="code_box">
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言"&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+        <p>必填文本区域</p>
+        <div class="code_box">
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言" required&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+        <p>只读文本区域</p>
+        <div class="code_box">
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言" readonly&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+        <p>禁用文本区域</p>
+        <div class="code_box">
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言" disabled&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+        <p>拼写检查</p>
+        <div class="code_box">
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言" spellcheck="true"&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+        <p>表单外文本区域</p>
+        <div class="code_box">
+            <pre><code>&lt;form id="form_id"&gt;&lt;/form&gt;</code></pre>
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言" form="form_id"&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+
+        <p>自动换行文本区域</p>
+        <div class="code_box">
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言" wrap="hard"&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+
+        <p>自动聚焦文本区域</p>
+        <div class="code_box">
+            <pre><code>&lt;textarea name="message" id="message" rows="4" cols="50" placeholder="请输入您的留言" autofocus&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+    </main>
+</body>
+
+</html>
