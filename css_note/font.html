@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-字体</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+
+</head>
+
+<body>
+
+    <main>
+        <h1>CSS-字体</h1>
+        <p>CSS中的字体属性用于控制网页中文本的字体样式和外观。</p>
+        <h2>常用的字体属性</h2>
+
+        <p><strong>font-family</strong>: 指定文本的字体系列，可以是具体的字体名称（如Arial, 'Times New Roman'）或通用字体族（如serif,
+            sans-serif,monospace）。</p>
+
+        <div class="code_box">
+            <code><pre>p { font-family: Arial, sans-serif; }</pre></code>
+        </div>
+
+        <p><strong>font-size</strong>: 设置文本的字体大小，可以使用绝对单位（如px, pt）或相对单位（如em, rem, %）。</p>
+        <p class="font-color">谷歌浏览器默认的文字大小为16px。</p>
+        <div class="code_box">
+            <code><pre>h1 { font-size: 2em; }</pre></code>
+        </div>
+
+        <p><strong>font-weight</strong>: 控制字体的粗细程度，常用值有normal, bold, 以及数值（100到900）。</p>
+        <p class="font-color">400 = normal 700 = bold</p>
+        <div class="code_box">
+            <code><pre>strong { font-weight: bold; }</pre></code>
+        </div>
+
+        <p><strong>font-style</strong>: 设置字体的样式，常用值有normal, italic（斜体）, oblique（倾斜体）。</p>
+        <div class="code_box">
+            <code><pre>em { font-style: italic; }</pre></code>
+        </div>
+
+        <p><strong>line-height</strong>: 控制文本行间距，可以使用数字、百分比或长度单位。</p>
+        <div class="code_box">
+            <code><pre>p { line-height: 1.5; }</pre></code>
+        </div>
+
+        <p><strong>font-variant</strong>: 用于设置字体的变体，如small-caps（小型大写字母）。</p>
+        <p class="font-color">在实际项目中，font-variant 属性的使用频率较低，主要用于特定的排版需求。</p>
+        <p class="font-color">font-variant 属性的值有：<br>
+            normal: 正常字体 <br>
+            small-caps: 小型大写字母<br>
+            all-small-caps: 包括大写字母在内都转换为小型大写字母<br>
+            petite-caps: 特小型大写字母（比小型大写字母更小）<br>
+            all-petite-caps: 包括大写字母在内都转换为特小型大写字母<br>
+            unicase: 混合大小写，字体设计者决定如何显示<br>
+            titling-caps: 专为标题设计的大写字母变体</p>
+        <div class="code_box">
+            <code><pre>小写字母转换为小型大写字母,比正常的大写字母小,本就是大写的字母保持不变<br>h2 { font-variant: small-caps; }</pre></code>
+        </div>
+
+        <h2>复合书写</h2>
+        <p>font属性可以一次性设置多个字体相关的属性，语法如下：</p>
+        <p class="font-color">不能更换顺序，并且各个属性间以空格隔开；必须保留 font-size 和 font-family 属性</p>
+        <div class="code_box">
+            <code><pre>font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family];</pre></code>
+        </div>
+    </main>
+</body>
+
+</html>

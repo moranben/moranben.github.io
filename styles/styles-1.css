@@ -6,3 +6,27 @@
     flex-direction: column;
     width: fit-content;
 }
+
+.indent {
+    text-indent: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.font-color {
+    color: red;
+    font-size: 13px;
+}

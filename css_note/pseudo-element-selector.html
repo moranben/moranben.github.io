@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+</head>
+
+<body>
+    <p>选择并样式化元素的第一个字母。</p>
+    <div class="code_box">
+        <code><pre>p::first-letter {         
+            
+            }</pre></code>
+    </div>
+    <p>选择并样式化元素的第一个行内元素。</p>
+    <div class="code_box">
+        <code><pre>p::first-line {            
+          
+        }</pre></code>
+    </div>
+    <p>在元素内容的开头插入内容。</p>
+    <div class="code_box">
+        <code><pre>p::before {
+           content: "前置内容";
+        }</pre></code>
+    </div>
+
+    <p>在元素内容的结尾插入内容。</p>
+    <div class="code_box">
+        <code><pre>p::after {
+           content: "后置内容";
+        }</pre></code>
+    </div>
+
+</body>
+
+</html>

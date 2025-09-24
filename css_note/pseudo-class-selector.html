@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+</head>
+
+<body>
+    <p>鼠标悬停状态</p>
+    <div class="code_box">
+        <code><pre>a:hover {
+            text-decoration: underline;
+        }</pre></code>
+    </div>
+
+    <p>已访问链接</p>
+    <div class="code_box">
+        <code><pre>a:visited {
+            color: purple;
+        }</pre></code>
+    </div>
+    <p>未访问链接</p>
+    <div class="code_box">
+        <code><pre>a:link {
+            color: blue;
+        }</pre></code>
+    </div>
+    <p>焦点元素</p>
+    <div class="code_box">
+        <code><pre>input:focus {
+            border-color: blue;
+        }</pre></code>
+    </div>
+    <p>第一个子元素</p>
+    <div class="code_box">
+        <code><pre>p:first-child {
+            font-weight: bold;
+        }</pre></code>
+    </div>
+    <p>最后一个子元素</p>
+    <div class="code_box">
+        <code><pre>p:last-child {
+            font-weight: bold;
+        }</pre></code>
+    </div>
+    <p>第n个子元素</p>
+    <div class="code_box">
+        <code><pre>p:nth-child(2n) {
+            background-color: #ccc;
+        }</pre></code>
+    </div>
+
+
+
+</body>
+
+</html>

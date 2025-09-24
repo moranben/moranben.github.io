@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+</head>
+
+<body>
+    <p>选择所有相同属性的a元素。</p>
+    <div class="code_box">
+        <code><pre>a[attribute] {         
+            
+            }</pre></code>
+    </div>
+
+    <p>选择所有具有指定属性且属性值等于某值的a元素。</p>
+    <div class="code_box">
+        <code><pre>a[attribute="value"] {            
+          
+        }</pre></code>
+    </div>
+
+    <p>选择所有具有指定属性且属性值包含某个值的a元素。</p>
+    <div class="code_box">
+        <code><pre>a[attribute*="value"] {
+           
+        }</pre></code>
+    </div>
+
+
+    <p>选择所有具有指定属性且属性值以某个值开头的a元素。</p>
+    <div class="code_box">
+        <code><pre>a[attribute^="value"] {
+       
+    }</pre></code>
+    </div>
+    <p>选择所有具有指定属性且属性值以某个值结尾的a元素。</p>
+    <div class="code_box">
+        <code><pre>a[attribute$="value"] {
+       
+    }</pre></code>
+    </div>
+
+
+</body>
+
+</html>

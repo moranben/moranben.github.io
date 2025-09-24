@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复杂选择器</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+</head>
+
+<body>
+    <h1>各种选择器的组合</h1>
+
+    <p>选择类名为"container"的div内的所有p元素，除了第一个</p>
+    <div class="code_box">
+        <code><pre>div.container p:not(:first-child) {
+  text-indent: 2em;
+}</pre></code>
+    </div>
+
+    <p>选择所有包含"example"的链接, 并在鼠标悬停时改变颜色</p>
+    <div class="code_box">
+        <code><pre>a[href*="example"]:hover {
+  color: red;
+}</pre></code>
+    </div>
+
+</body>
+
+</html>

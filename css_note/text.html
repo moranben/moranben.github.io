@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-文本</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+</head>
+
+<body>
+    <main>
+        <h1>CSS-文本</h1>
+        <p>CSS中的文本属性用于控制网页中文本的样式和外观。</p>
+        <h2>常用的文本属性</h2>
+
+        <p><strong>color</strong>: 设置文本的颜色，可以使用颜色名称、十六进制值或RGB/RGBA值。</p>
+        <div class="code_box">
+            <code><pre>p { color: red; }</pre></code>
+        </div>
+
+        <p><strong>text-align</strong>: 设置文本的对齐方式，常用值有left, right, center, justify。</p>
+        <div class="code_box">
+            <code><pre>h1 { text-align: center; }</pre></code>
+        </div>
+
+        <p><strong>text-decoration</strong>: 设置文本的装饰效果，如overline（上划线）、underline（下划线）、line-through（删除线）等。</p>
+        <div class="code_box">
+            <code><pre>a { text-decoration: none; }</pre></code>
+        </div>
+        <p><strong>text-indent</strong>: 设置文本的首行缩进。单位可以是长度单位（如px, em）或百分比。</p>
+        <div class="code_box">
+            <code><pre>p { text-indent: 2em; }</pre></code>
+        </div>
+
+        <p><strong>line-height</strong>: 设置文本行间距。单位可以是长度单位（如px, em）或百分比。</p>
+        <div class="code_box">
+            <code><pre>p { line-height: 1.5; }</pre></code>
+        </div>
+
+        <p><strong>text-transform</strong>: 控制文本的大小写转换，常用值有uppercase, lowercase, capitalize。</p>
+        <div class="code_box">
+            <code><pre>h2 { text-transform: uppercase; }</pre></code>
+        </div>
+
+        <p><strong>letter-spacing</strong>: 设置文本字母之间的间距。</p>
+        <div class="code_box">
+            <code><pre>p { letter-spacing: 2px; }</pre></code>
+        </div>
+
+        <p><strong>white-space</strong>: 控制文本的空白处理方式，常用值有normal, nowrap, pre。</p>
+        <div class="code_box">
+            <code><pre>pre { white-space: pre; }</pre></code>
+        </div>
+
+        <h2>复合书写</h2>
+        <p>可以使用简写属性一次性设置多个文本相关的属性，语法如下：</p>
+        <div class="code_box">
+            <code><pre>text: [text-align] [text-decoration] [text-transform] [color];</pre></code>
+        </div>
+    </main>
+</body>
+
+</html>

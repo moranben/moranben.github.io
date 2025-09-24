@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS层叠样式表</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+    </style>
 </head>
 
 <body>
 
+    <header>
+        <h1>CSS层叠样式表</h1>
+    </header>
+
+    <main>
+        <p class="indent">
+            CSS（Cascading Style
+            Sheets，层叠样式表）是一种用于描述HTML文档外观和格式的样式表语言。它允许开发者控制网页的布局、颜色、字体、间距等视觉效果，从而提升用户体验和网站的美观性。CSS通过选择器将样式应用于HTML元素，实现内容与表现的分离，使得网页设计更加灵活和易于维护。
+        </p>
+        <p class="indent">CSS规则：选择器 { 属性: 值; }</p>
+        <h2>选择器</h2>
+        <ul>
+            <li><a href="basic-selector.html">基础选择器</a></li>
+            <li><a href="group-selector.html">组合选择器</a></li>
+            <li><a href="pseudo-class-selector.html">伪类选择器</a></li>
+            <li><a href="pseudo-element-selector.html">伪元素选择器</a></li>
+            <li><a href="attribute-selector.html">属性选择器</a></li>
+            <li><a href="other-selector.html">其他选择器</a></li>
+        </ul>
+    </main>
+
+    <nav>
+        <h2>目录</h2>
+        <ul>
+            <li><a href="font.html">font</a></li>
+            <li><a href="text.html">text</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>
