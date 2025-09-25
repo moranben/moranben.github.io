@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-背景</title>
+    <link rel="stylesheet" href="../styles/styles-1.css">
+</head>
+
+<body>
+    <main>
+        <h1>背景</h1>
+        <p>在CSS中，背景属性用于设置元素的背景，包括背景颜色、背景图像、背景位置等。通过合理使用背景属性，可以为网页添加丰富的视觉效果。</p>
+        <h2>常用的背景属性</h2>
+        <p>背景颜色:名称/rgb/rgba/hex/hsl</p>
+        <div class="code_box">
+            <code>
+                <pre>background-color: white;</pre>
+                <pre>&lt;!--hex--&gt;<br>background-color: #ffffff;</pre>
+                <pre>&lt;!--hsl--&gt;<br>background-color: hsl(0, 0%, 100%);</pre>
+                <pre>&lt;!--rgb--&gt;<br>background-color: rgb(255, 255, 255);</pre>
+                <pre>&lt;!--rgba--&gt;<br>background-color: rgba(255, 255, 255, 1);</pre>
+                
+                <p class="font-color">背景透明度opacity: 0-1之间的数值。<br>注意：使用 opacity 属性为元素的背景添加透明度时，其所有子元素都继承相同的透明度。<br>这可能会使完全透明的元素内的文本难以阅读。可以使用 <b style="color: green">rgba()</b>函数为背景颜色添加透明度。</p>
+                <pre class="font-color">opacity: 0.5;</pre>
+            </code>
+        </div>
+
+        <p>背景图像: url()</p>
+        <div class="code_box">
+            <code>
+                <pre>background-image: url('image.jpg');</pre>
+            </code>
+        </div>
+
+        <p>背景重复</p>
+        <div class="code_box">
+            <code>
+                <pre>&lt;!--背景重复--&gt;<br>background-repeat: repeat;</pre>
+                <pre>&lt;!--背景不重复--&gt;<br>background-repeat: no-repeat;</pre>
+                <pre>&lt;!--背景横向重复--&gt;<br>background-repeat: repeat-x;</pre>
+                <pre>&lt;!--背景纵向重复--&gt;<br>background-repeat: repeat-y;</pre>
+            </code>
+        </div>
+        <p>背景位置</p>
+        <div class="code_box">
+            <code>
+                <pre>&lt;!--左上--&gt;<br>background-position: left top;</pre>
+                <pre>&lt;!--中间--&gt;<br>background-position: center center;</pre>
+                <pre>&lt;!--右下--&gt;<br>background-position: right bottom;</pre>
+                <pre>&lt;!--50% 50%--&gt;<br>background-position: 50% 50%;</pre>
+                <pre>&lt;!--100px 200px--&gt;<br>background-position: 100px 200px;</pre>
+            </code>
+        </div>
+        <p>背景附着</p>
+        <div class="code_box">
+            <code>
+                <pre>&lt;!--背景固定--&gt;<br>background-attachment: fixed;</pre>
+                <pre>&lt;!--背景滚动--&gt;<br>background-attachment: scroll;</pre>
+            </code>
+        </div>
+        <p>背景尺寸</p>
+        <div class="code_box">
+            <code>
+                <pre>&lt;!--背景尺寸--&gt;<br>background-size: cover;</pre>
+            </code>
+        </div>
+        <h2>简写属性</h2>
+        <p>background属性可以一次性设置多个背景相关的属性，语法如下：</p>
+        <p class="font-color">各个属性间以空格隔开；必须保留 background-color 属性</p>
+        <div class="code_box">
+            <code><pre>background: [background-color] [background-image] [background-repeat] [background-attachment] [background-position] [background-size];</pre></code>
+        </div>
+
+    </main>
+</body>
+
+</html>
